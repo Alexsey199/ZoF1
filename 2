@@ -1,0 +1,52 @@
+
+импорт android.Содержание.Намерение;
+импорт android.Поддержка.v7.апп.AppCompatActivity;
+импорт android.ос.Пучок;
+импорт android.Вид.Посмотреть;
+импорт android.виджет.Кнопка;
+импорт android.виджет.EditText;
+импорт android.виджет.ImageView;
+
+
+
+public class MainActivity2 расширяет AppCompatActivity{
+    частный просмотр изображений ing;
+    приватная кнопка btn;
+    частная  электронная почта EditText, пропуск;
+
+
+    частная статическая конечная строка email_txt = "artemshipov2002@yandex.ru-да.;
+    private static final String pass_txt = "123";
+
+    @Ручная коррекция
+    protected void onCreate(Bundle savedInstanceState) {
+        супер.onCreate(savedInstanceState);
+ setContentView (R.макет.activity_main2);
+ войти();
+
+
+    }
+    публичный недействительный логин () {
+ ing = (ImageView) findViewById(R.удостоверениеличности .imageView4);
+ btn = (Button) findViewById(R.удостоверениеличности .элемент button2);
+ email = (EditText) findViewById(R.удостоверениеличности .editTextTextEmailAddress2);
+ pass = (EditText) findViewById(R.удостоверениеличности .editTextTextPassword4);
+
+ БТН.сетонкликлистенер(
+                новый взгляд.OnClickListener() {
+                    @Ручная коррекция
+                    public void onClick(просмотр v) {
+                        if (email_txt.equals (строка.valueOf(электронная почта.getText ())) & & pass_txt.equals (строка.valueOf(pass.getText()))) {
+ ing.setImageResource (R.рисуется.фото1);
+                            Intent intent2 = новое намерение(MainActivity2.это, MainActivity4.класс);
+ startActivity(intent2);
+
+ } еще
+ ing.setImageResource (R.рисуется.фото);
+
+                    }
+
+                }
+        );
+    }
+}
